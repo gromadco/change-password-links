@@ -14,7 +14,12 @@ a:focus {
 }
 
 h3 {
-    font-weight: 100;
+    font-weight: 0;
+}
+
+h4 {
+    font-size:small;
+    color: rgb(133, 133, 133);
 }
 
 /* LAYOUT CSS */
@@ -158,7 +163,7 @@ h3 {
 
 @media (min-width: 48em) {
     .content {
-        padding: 1em 1em 0;
+        padding: 1em 2em 0;
         margin-left: 0%;
     }
 
@@ -197,6 +202,7 @@ h3 {
     margin:0;
     overflow:visible;
     padding:.5em 1em;
+    text-align:left;
 }
 
 .pure-table td:first-child,.pure-table th:first-child{
