@@ -5,6 +5,8 @@
 }
 
 a {
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
     text-decoration: none;
     color: rgb(61, 146, 201);
 }
@@ -18,6 +20,7 @@ h3 {
 }
 
 h4 {
+    font-weight: 0;
     font-size:small;
     color: rgb(133, 133, 133);
 }
@@ -163,7 +166,7 @@ h4 {
 
 @media (min-width: 48em) {
     .content {
-        padding: 1em 2em 0;
+        padding: 0em 5em 0;
         margin-left: 0%;
     }
 
@@ -184,7 +187,7 @@ h4 {
     border-collapse:collapse;
     border-spacing:0;
     empty-cells:show;
-    border:0px solid #cbcbcb;
+    border:2px solid #cbcbcb;
     text-align:left;
 }
 
@@ -201,7 +204,7 @@ h4 {
     font-size:inherit;
     margin:0;
     overflow:visible;
-    padding:.5em 1em;
+    padding:1em 1em;
     text-align:left;
 }
 
@@ -244,4 +247,62 @@ h4 {
 
 .pure-table-horizontal tbody>tr:last-child td{
     border-bottom-width:0;
+}
+
+
+/* Список #2 */ 
+#list2 { 
+    width:500px; 
+} 
+
+#list2 ol { 
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:30px; 
+    color:#999;    
+} 
+
+#list2 ol li { } 
+#list2 ol li p { 
+    padding:10px; 
+    font-style:normal; 
+    font-family:Arial; 
+    font-size:24px; 
+    color:#999; 
+    border-left: 1px solid #999; 
+} 
+
+#name {
+    padding: 1em 1em 1em;
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:30px; 
+    color:#999; 
+    border-left: 0px solid #999; 
+}
+
+#name-txt{
+    padding: 1em 1em 1em;
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:14px; 
+    color:#999; 
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999; 
+}
+
+#name2 {
+    padding:10px;
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:24px; 
+    color:#999; 
+    border-left: 0px solid #999; 
+}
+
+#name2 p{
+    padding:0px;
+    font-style:normal; 
+    font-family:Georgia, Times, serif; 
+    font-size:14px;     
 }

@@ -6,95 +6,67 @@
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>change-password-links</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <!--[if lte IE 8]>
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
-  
+    <!--[if lte IE 8]>  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">  
     <![endif]-->
     <!--[if gt IE 8]><!-->  
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">  
     <!--<![endif]-->  
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+    <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="css/layouts/blog.css">
     <!--<![endif]-->
 </head>
 
-<body>
+<body>    
+    <div class="content">
 
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <a href="#" class="pure-menu-heading"><center><h1>Change Password Links</h1></center></a> 
-  </div>
+        <div id="name">
+            Change Password Links
+        </div>       
 
-  <!--
-  <div class="content">
-    <p class="text-box-subhead">A list of sites where to change passwords</p>    
-  </div>
--->
-      
-  <div class="content">
-        <form class="pure-form">
-          <input type="text" class="pure-input-rounded">
-          <button type="submit" class="pure-button">Search</button>
-        </form>  
-      </br>
-  </div>
+        <div id="name-txt">
+            Тут описание на 100-200 символов по проекту
+        </div>        
+        
+        <div id="name2">
+            <ol>    
+                <img src="icon/delicious.gif" width="20" height="20" alt="icon">
+                <a href="https://delicious.com/settings/password">Delicious</a>
+                <p></p></br>         
+            
+                <img src="icon/favicon-facebook.png" width="20" height="20" alt="icon">
+                <a href="https://www.facebook.com/settings?tab=account&section=password&view">Facebook</a>                                         
+                <p></p></br>                        
+            
+                <img src="icon/favicon-twitter.ico" width="20" height="20" alt="icon">
+                <a href="https://twitter.com/settings/password">Twitter</a>
+                <p></p></br>            
+            
+                <img src="icon/favicon-github.ico" width="20" height="20" alt="icon">
+                <a href="https://github.com/settings/admin">GitHub</a>
+                <p></p></br>             
+            
+                <img src="icon/favicon-google.png" width="20" height="20" alt="icon">
+                <a href="https://accounts.google.com/b/0/EditPasswd?hl=en&continue=https://www.google.com/settings/security">Google</a>
+                <p></p></br>             
+            
+                <img src="icon/favicon-slack.png" width="20" height="20" alt="icon">
+                <a href="https://yourteam.slack.com/forgot">Slack</a>
+                <p></p></br>             
+            
+                <img src="icon/favicon-hipchat.ico" width="20" height="20" alt="icon">
+                <a href="https://yourteam.hipchat.com/account/password">HipChat</a>
+                <p></p></br>                
+            
+                <img src="icon/favicon-in.ico" width="20" height="20" alt="icon">
+                <a href="https://www.linkedin.com/settings/?trk=nav_account_sub_nav_settings">Linkedin</a>                        
+                <p>Search for "Password" and click Change next to it.</p>                                 
+            </ol>
+        </div>
 
-  <div class="content">
-    lorem imsum
-  </div>
-
-</br>
-    
-  
-  <div class="content">
-    <table class="pure-table">
-    <tbody>
-        <tr>
-            <th><img src="icon/favicon-facebook.png" width="25" height="25" alt="icon"></th>
-            <th><a href="https://www.facebook.com/settings?tab=account&section=password&view">Facebook</a></th>
-            <th></th>            
-        </tr>
-        <tr>
-            <th><img src="icon/favicon-twitter.ico" width="25" height="25" alt="icon"></th>
-            <th><a href="https://twitter.com/settings/password">Twitter</a></th>
-            <th></th>            
-        </tr>
-        <tr>
-            <th><img src="icon/favicon-github.ico" width="25" height="25" alt="icon"></th>
-            <th><a href="https://github.com/settings/admin">GitHub</a></th>
-            <th></th>            
-        </tr>
-        <tr>
-            <th><img src="icon/favicon-google.png" width="25" height="25" alt="icon"></th>
-            <th><a href="https://accounts.google.com/b/0/EditPasswd?hl=en&continue=https://www.google.com/settings/security">Google</a></th>
-            <th></th>            
-        </tr>
-        <tr>
-            <th><img src="icon/favicon-slack.png" width="25" height="25" alt="icon"></th>
-            <th><a href="https://yourteam.slack.com/forgot">Slack</a></th>
-            <th></th>            
-        </tr>
-        <tr>
-            <th><img src="icon/favicon-hipchat.ico" width="25" height="25" alt="icon"></th>
-            <th><a href="https://yourteam.hipchat.com/account/password">HipChat</a></th>
-            <th></th>            
-        </tr> 
-        <tr>
-            <th><img src="icon/delicious.gif" width="25" height="25" alt="icon"></th>
-            <th><a href="https://delicious.com/settings/password">Delicious</a></th>
-            <th></th>            
-        </tr>    
-        <tr>
-            <th><img src="icon/favicon-in.ico" width="25" height="25" alt="icon"></th>
-            <th><a href="https://www.linkedin.com/settings/?trk=nav_account_sub_nav_settings">Linkedin</a></th>
-            <th><h4>Search for "Password" and click Change next to it.</h4></th>            
-        </tr>    
-    </tbody>
-</table>
-  </div>
-  
+    </div>
 </body>  
 </html>
