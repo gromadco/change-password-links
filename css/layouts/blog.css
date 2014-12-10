@@ -275,6 +275,13 @@ h6 {
     /*border-bottom: 1px solid #999; */
 }
 
+#name-txt a{
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:14px; 
+    color: rgb(61, 146, 201);  
+}
+
 #name2 {
     padding:10px;
     font-style:normal; 
