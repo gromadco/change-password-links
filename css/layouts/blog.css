@@ -5,14 +5,16 @@
 }
 
 a {
-    font-style:italic; 
+    font-style:normal;
+    font-size: 24px; 
     font-family:Georgia, Times, serif; 
     text-decoration: none;
     color: rgb(61, 146, 201);
+    text-decoration: none;
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    text-decoration: none;    
 }
 
 h3 {
@@ -23,6 +25,11 @@ h4 {
     font-weight: 0;
     font-size:small;
     color: rgb(133, 133, 133);
+}
+
+h6 {
+    font-size:10px;
+    margin:0em 0 0;
 }
 
 /* LAYOUT CSS */
@@ -249,31 +256,8 @@ h4 {
     border-bottom-width:0;
 }
 
-
-/* Список #2 */ 
-#list2 { 
-    width:500px; 
-} 
-
-#list2 ol { 
-    font-style:italic; 
-    font-family:Georgia, Times, serif; 
-    font-size:30px; 
-    color:#999;    
-} 
-
-#list2 ol li { } 
-#list2 ol li p { 
-    padding:10px; 
-    font-style:normal; 
-    font-family:Arial; 
-    font-size:24px; 
-    color:#999; 
-    border-left: 1px solid #999; 
-} 
-
 #name {
-    padding: 1em 1em 1em;
+    padding: 1em 0em 1em;
     font-style:italic; 
     font-family:Georgia, Times, serif; 
     font-size:30px; 
@@ -288,21 +272,33 @@ h4 {
     font-size:14px; 
     color:#999; 
     border-top: 1px solid #999;
-    border-bottom: 1px solid #999; 
+    /*border-bottom: 1px solid #999; */
 }
 
 #name2 {
     padding:10px;
-    font-style:italic; 
+    font-style:normal; 
     font-family:Georgia, Times, serif; 
     font-size:24px; 
     color:#999; 
-    border-left: 0px solid #999; 
+    border-left: 0px solid #999;     
 }
 
 #name2 p{
     padding:0px;
-    font-style:normal; 
+    font-style:italic; 
     font-family:Georgia, Times, serif; 
-    font-size:14px;     
+    font-size:14px;  
+    border-bottom: 1px solid #999;    
+}
+
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/* MAIN MENU STYLING */
+
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background: #fff; /* Old browsers */
+    border: 0px solid #b7b7b7;
 }
