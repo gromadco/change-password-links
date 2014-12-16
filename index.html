@@ -17,7 +17,7 @@
     <![endif]-->
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="css/layouts/blog.css"> 
-     
+    <script src="js/main.js"></script>     
     <!--<![endif]-->
 </head>
 <body>    
@@ -70,34 +70,34 @@
             <center><a href="https://gromad.co">Groma.co</a></center>
         </div>
     </div>
-
-    <input type="text" id="input" />
-
     
 
-<ul>
-<li class="thumb selectable arrow light" style="margin-bottom:-5px;"
-data-image="http://cdn.tapquo.com/lungo/icon-144.png">
-<strong class="name">Andrew</strong> 
-<small class="description">Hi!</small> 
-</li>
-<li class="thumb selectable arrow light" style="margin-bottom:-5px;"
-data-image="http://cdn.tapquo.com/lungo/icon-144.png">
-<strong class="name">John</strong> 
-<small class="description">Hi!</small> 
-</li>
-<li class="thumb selectable arrow light" style="margin-bottom:-5px;"
-data-image="http://cdn.tapquo.com/lungo/icon-144.png">
-<strong class="name">Peter</strong> 
-<small class="description">Hi!</small> 
-</li>
-</ul>
+<div id="users">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
 
-<script src="/js/main.js"></script>
-
-
-
-
+  <ul class="list">
+    <li>
+      <h3 class="name">Jonny Stromberg</h3>
+      <p class="born">1986</p>
+    </li>
+    <li>
+      <h3 class="name">Jonas Arnklint</h3>
+      <p class="born">1985</p>
+    </li>
+    <li>
+      <h3 class="name">Martina Elm</h3>
+      <p class="born">1986</p>
+    </li>
+    <li>
+      <h3 class="name">Gustaf Lindqvist</h3>
+      <p class="born">1983</p>
+    </li>
+  </ul>
+</div>
+<script src="http://listjs.com/no-cdn/list.js"></script>
 
 
 </body>  
