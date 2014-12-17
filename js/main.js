@@ -3,3 +3,4 @@ var options = {
 };
 
 var userList = new List('users', options);
+console.log(userList);
