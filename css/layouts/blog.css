@@ -272,6 +272,7 @@ h6 {
     font-size:14px; 
     color:#999; 
     border-top: 1px solid #999;
+    margin-bottom: 1em;
     /*border-bottom: 1px solid #999; */
 }
 
@@ -325,18 +326,24 @@ h6 {
 .avatar {
   max-width: 150px;
 }
-img {
+
+.list img {
   max-width: 100%;
+  float: left;    
+  margin-top: 10px;
+  margin-right: 1em;
 }
-h3 {
+.list h3 {
   font-size: 16px;
   margin:0 0 0rem;
   font-weight: normal;
-  font-weight:bold;
+  font-weight:bold;  
+  margin-right: 1em;   
 }
-p {
-  margin:0;
+.list p {    
+  font-size:10px;  
 }
+
 
 input {
   border:solid 1px #ccc;
@@ -399,6 +406,8 @@ input:focus {
   right:-5px;
 }
 
-.li-pre-line {
-  white-space: nowrap;
-}
+.centered {
+    
+    
+    left: 50%;
+  }
