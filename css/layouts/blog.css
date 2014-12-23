@@ -318,6 +318,7 @@ h6 {
   padding:20px 0 0;
   white-space: nowrap;
 }
+
 .list > li {
   display:block;  
   padding:10px;
@@ -340,7 +341,12 @@ h6 {
   font-weight:bold;  
   margin-right: 1em;   
 }
-.list p {    
+.list h3 i{
+  font-size: 10px;
+  padding-left: 20px;   
+}
+
+.list p {      
   font-size:10px;  
 }
 
@@ -406,8 +412,6 @@ input:focus {
   right:-5px;
 }
 
-.centered {
-    
-    
+.centered {    
     left: 50%;
   }
