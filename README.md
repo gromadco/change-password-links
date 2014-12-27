@@ -1,16 +1,4 @@
-Pure CSS Layout Examples
-========================
+This is a website
 
-Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
-
-[pure]: http://purecss.io/
-[pure-site]: https://github.com/yahoo/pure-site
-
-
-License
--------
-
-This software is free to use under the Yahoo! Inc. BSD license.
-See the [LICENSE file][] for license text and copyright information.
-
-[LICENSE file]: https://github.com/yahoo/pure-site/blob/master/LICENSE.md
+Sends you the link to change your password account of a social group or a loved one service on the Internet. 
+This allows easier and change your password regularly, thus ensuring the safety and privacy of data
