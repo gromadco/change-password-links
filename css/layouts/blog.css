@@ -60,8 +60,8 @@ h6 {
     border-left: 0px solid #999; 
 }
 #name-txt{
+    max-width: 80em;
     padding: 25px 25px 25px;
-    font-style:italic; 
     font-family:Georgia, Times, serif; 
     font-size:14px; 
     color:#999; 
@@ -75,6 +75,12 @@ h6 {
     font-size:14px; 
     color: rgb(61, 146, 201);  
 }
+#links{
+    font-size:14px; 
+    max-width: 80em;
+    padding: 25px;
+    border-top: 1px solid #999;
+}
 /*csslint adjoining-classes:false*/
 /*TODO: Remove this lint rule override after a refactor of this code.*/
 /* MAIN MENU STYLING */
@@ -82,6 +88,9 @@ h6 {
 .pure-menu.pure-menu-horizontal li .pure-menu-children {
     background: #fff; /* Old browsers */
     border: 0px solid #b7b7b7;
+}
+#filter-form{
+  padding:10px 0px 10px 60px;
 }
 .list {
   font-family:sans-serif;
