@@ -1,4 +1,1 @@
-This is a website
-
-Sends you the link to change your password account of a social group or a loved one service on the Internet. 
-This allows easier and change your password regularly, thus ensuring the safety and privacy of data
+Changing passwords regularly is a good habit. Here you will find direct links to the pages where you can change your password in various web services. Bookmark the page and use it regularly.
