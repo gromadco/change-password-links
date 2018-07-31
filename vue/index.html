@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Vue.js</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="/resources/demos/style.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400" rel="stylesheet">
+   </head>
+   <body>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <div class="wrapper">
+         <div class="content">
+            <div id="list">
+               <div class="container-header">
+                  <div class="block-left-header">
+                     <div id="header" style="color: #757575">
+                        <h1 style="display: inline; margin-left:30px;">{{ massage }}</h1>
+                        <h1 style="display: inline; font-weight: 300;">{{ massageSlim }}</h1>
+                     </div>
+                  </div>
+                  <div class="block-right-header">
+                     <div class="item-search">
+                        <input type="text" v-model="siteTitle" name="search" placeholder="Search.."/>
+                     </div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="block-left">
+                     <div class="boxes">
+                        <ul id="sortable">
+                           <li v-for="(site, index) in filteredList" class="ui-state-default">
+                              <!--<input type="checkbox" v-model="site.done">-->
+                              <div class="container-list-item">
+                                 <div class="block-check">
+                                    <label class="checkbox">
+                                    <input type="checkbox" checked :id="site.checkTitle" v-model="site.done">
+                                    <span class="checkbox__icon"></span>	
+                                    </label>	
+                                 </div>
+                                 <div class="block-img">									      		
+                                    <img :src="site.siteIcon" class="round">
+                                 </div>
+                                 <div class="block-contant">
+                                    <label :for="site.checkTitle">
+                                       <a :href="site.company">
+                                          <h2 :class="{ done: site.done }">{{ site.siteTitle }}</h2>
+                                       </a>
+                                       <p :class="{ done: site.done }" style="color:#757575;">{{ site.company }}</p>
+                                    </label>
+                                 </div>
+                                 <div class="block-delet">
+                                    <button v-on:click="sites.splice(index, 1)" class="button-delete">
+                                    <a href="#" class="close-button"></a>
+                                    </button>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="block-right">
+                     <div class="block-right-content">
+                        <div class="block-right-contant-input">
+                           <h2 style="color:#212121; margin-bottom:20px;">New Web Site</h2>
+                           <input type="text" v-model="newSite" style="margin-bottom:20px;" placeholder="Site"/>
+                           <input type="text" v-model="newSiteURL" style="margin-bottom:20px;" placeholder="Link"/>
+                           <button v-on:click="sites.push({siteTitle: newSite, company: newSiteURL})" class="button button2" style="margin-bottom:20px;">+ Add</button>	
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="footer" class="footer">
+            <a :href="siteName">
+               <h6>{{ dev }}</h6>
+            </a>
+         </div>
+      </div>
+      <script src="js/main.js"></script>	
+   </body>
+   </body>
+</html>
